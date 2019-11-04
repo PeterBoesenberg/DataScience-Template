@@ -68,3 +68,9 @@ f.seek(n) reading position set to n
 f.write(message)
 f.close()
 f.closed check, if file is closed
+
+## RegExp
+
+import re 
+@[A-Za-z0-9_]+ Start with an @ and then any number of digits, characters or underscore
+[w for w in words if re.search('@[A-Za-z0-9_]+', w)] searches through all words and finds those, that are callouts (start with @)

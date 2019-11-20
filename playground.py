@@ -26,7 +26,7 @@ df.drop(['PassengerId', 'Ticket', 'Cabin'], axis=1, inplace=True)
 #     print(df[col].unique())
 print(df['Age'].unique())
 #print(df)
-correlation_cols = ['Age', 'Fare', 'SibSp', 'Parch']
+correlation_cols = ['Age', 'Fare', 'SibSp', 'Parch','Survived']
 df_corr = pd.DataFrame()
 # ttest_something = stats.ttest_ind( df['Age'],  df['Fare'])
 # print(ttest_something)

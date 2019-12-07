@@ -9,6 +9,7 @@
     print(df[col].unique())`
 1.1. Get an overview about missing data
 `df.info()`
+1.3. Find out the type of data in the column: categorial, ordinal, numerical, int, float, date,...
 2. Mark missing values
 `df.replace('something',np.NaN, inplace=True)`
 3. Normalize values
@@ -18,7 +19,8 @@ Think about what todo with e.g. an age with 'nan': fill in a zero? keep a nan? p
 `df.replace(np.NAN,df['Age'].mean(), inplace=True)`
 or
 `df_missing['Age'] = df_missing['Age'].fillna(df_missing['Age'].mean())`
-4. remove unneccassary columns
+4. create dummy variables
+5. remove unneccassary columns
 df.drop(['PassengerId', 'Ticket', 'Cabin'], axis=1)
 
 ## descriptive statistics
